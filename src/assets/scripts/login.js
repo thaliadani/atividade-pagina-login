@@ -1,7 +1,7 @@
 const inputUsuario = document.getElementById('usuario');
 const inputSenha = document.getElementById('senha');
 const btnEntrar = document.getElementById('btn-entrar');
-const btnMostrarSenha = document.getElementById('btn-mostrar-senha');
+const btnMostrarSenha = document.getElementById('mostrar-senha');
 
 let usuario = 'admin';
 let senha = '12345678';
@@ -15,12 +15,13 @@ btnEntrar.addEventListener('click', (event) => {
     }
 });
 
-btnMostrarSenha.addEventListener('click', function() {
-    let senhaDigitada = inputSenha.value; 
+btnMostrarSenha.addEventListener('click', () =>{
 
-    if (senhaDigitada.getAttribute('type') == 'password') {
+    if (inputSenha.getAttribute('type') == 'password') {
         input.setAttribute('type', 'text');
+        btnMostrarSenha.className ='iconoir-eye-closed';
     } else {
         input.setAttribute('type', 'password');
+        btnMostrarSenha.className ='iconoir-eye-solid';
     }
 });

@@ -51,7 +51,7 @@ main #form-login .login-usuario, main #form-login .login-senha{
     width: 100%;
 }
 
-main #form-login .login-senha #btn-mostrar-senha{
+main #form-login .login-senha #mostrar-senha{
     position: absolute;
     right: 16%;
     cursor: pointer;
